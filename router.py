@@ -27,14 +27,14 @@ def send_email(subMsg, bodyMsg):
     server.quit()
 
 def send_text(subMsg, bodyMsg):
-    twilio_Sid = 'AC2e45a7c61e8816c63ccd7fd23fa477fb'
-    twilio_Auth_Token = '2166c759c7359fb7523f55ea770066f6'
+    twilio_Sid = 'your Twilio sid'
+    twilio_Auth_Token = 'your Twilio auth token'
 
     # Creating twilio client with our credentials
     whatsApp_Client = Client(twilio_Sid, twilio_Auth_Token)
 
     contacts = {
-        'myself': '+17783209656'
+        'number': 'phone number'
     }
 
     for key, value in contacts.items():
